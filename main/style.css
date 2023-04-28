@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    min-height: 1350px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:#000 !important;
+    color: white;
+}
+section{
+    position: relative;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg{
+    position: fixed;
+    background-image: url(../main/img/333.jpg);
+    background-size: cover;
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+    width:80%;
+    height:0px;
+
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+div button{
+    margin-top: 10px;
+    transform: 1s;
+}
+div button:hover{
+    color: aqua;
+}
+#d1,#d2,#d3,#d4{
+    width: 400px;
+    height: 330px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: orange;
+    border-radius: 30px;
+    text-shadow:1px 1px #000;
+    margin-top: 30px;
+    display: flex;
+justify-content: space-between;
+    flex-direction: column;
+
+}
+#rob{
+    color:#fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+#sda{
+    color: red;
+}
+#sor{
+    width:80%;
+    height:100vh;
+    background-size: cover;
+    position: absolute;
+    top:50px ;
+    border-radius: 45px;
+    z-index: 1;
+}
+
+h5{
+    margin-top: 10px;
+}
