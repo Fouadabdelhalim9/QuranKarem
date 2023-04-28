@@ -1,131 +1,33 @@
 <!DOCTYPE html>
-<html lang="ar">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quran karem</title>
-    <link rel="stylesheet" href="./main/style.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#btn1').click(function(){
-                $('#d1').slideToggle(1000)
-                $('#sor').hide(1000)
-            })
-         })
-         $(document).ready(function(){
-            $('#btn2').click(function(){
-                $('#d2').slideToggle(1000)
-                $('#sor').hide(1000)
-            })
-         })
-         $(document).ready(function(){
-            $('#btn3').click(function(){
-                $('#d3').slideToggle(1000)
-                $('#sor').hide(1000)
-            })
-         })
-         $(document).ready(function(){
-            $('#btn4').click(function(){
-                $('#d4').slideToggle(1000)
-                $('#sor').hide(1000)
-            })
-         })
-         $(document).ready(function(){
-            $(window).scroll(function(){
-                var scrollpos=$(window).scrollTop();
-                $('.bg').css({
-'height':+(scrollpos)+'px'
-                })
-            })
-         })
-    </script>
-  </head>
-  <body dir="rtl">
-    <div>
-      <center>
-        <button  type="button" class="btn btn-primary m-10" id="btn1" title="انقر هنا لعرض سوره الفاتحه">
-          سوره الفاتحه
-        </button>
-        <button  type="button" class="btn btn-primary m-10" id="btn2" title="انقر هنا لعرض سوره الاخلاص">
-          سوره الاخلاص
-        </button>
-        <button type="button" class="btn btn-primary m-10" id="btn3" title="انقر هنا لعرض سوره الفلق">سوره الفلق</button>
-        <button href="" type="button" class="btn btn-primary m-10" id="btn4" title="انقر هنا لعرض سوره الناس">سوره الناس</button>
-      </center>
-    </div>
-    <br>
-   
-  <img src="./main/img/sor2.jpg" alt="" id="sor">
-    
-<br>
-    <center>
-      <div id="d1">
-        <h3>ּ﷽</h3>
-        <font size="4" صهي>
-          بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ (1) الْحَمْدُ لِلَّهِ رَبِّ
-          الْعَالَمِينَ (2) الرَّحْمَنِ الرَّحِيمِ (3) مَالِكِ يَوْمِ الدِّينِ
-          (4) إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ (5) اهْدِنَا الصِّرَاطَ
-          الْمُسْتَقِيمَ (6) صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ
-          الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ (7)
-        </font>
-        <h5>'صَدَقَ اللهُ العَظيمُ'</h5>
-        <audio class="mx-auto" src="./main/img/sor2.jpg" controls></audio>
-      </div>
-<br>
-      <div id="d2">
-        <h3>ּ﷽</h3>
-        <font size="4"
-          >قُلْ هُوَ اللَّهُ أَحَدٌ (1) اللَّهُ الصَّمَدُ (2) لَمْ يَلِدْ وَلَمْ
-          يُولَدْ (3) وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ (4)</font
-        >
-        <h5>'صَدَقَ اللهُ العَظيمُ'</h5>
-        <audio class="mx-auto" src="./main/img/112.mp3" controls></audio>
+</head>
+<body>
+    <nav class="navbar bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand"><h4><span style="color:white;">رمضان كريم</span> </h4></a>
+          <div class="d-flex text-light " >
+            <a class="navbar-brand" href="./main.html"><h6>القرآن</h6></a> 
+      <a class="navbar-brand" href="./azkar.html"><h6>الاذكار</h6></a> 
+      <a class="navbar-brand"  href="./salah.html"><h6>مواعيدالصلاه</h6></a> 
 
-      </div>
-<br />
-      <div id="d3">
-        <h3>ּ﷽</h3>
-        <font size="4"
-          >قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ (1) مِنْ شَرِّ مَا خَلَقَ (2) وَمِنْ
-          شَرِّ غَاسِقٍ إِذَا وَقَبَ (3) وَمِنْ شَرِّ النَّفَّاثَاتِ فِي
-          الْعُقَدِ (4) وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ (5)</font
-        >
-        <h5>'صَدَقَ اللهُ العَظيمُ'</h5>
-        <audio class="mx-auto" src="./main/img/113.mp3" controls></audio>
-
-      </div>
-<br />
-      <div id="d4">
-        <h3>ּ﷽</h3>
-        <font size="4"
-          >قُلْ أَعُوذُ بِرَبِّ النَّاسِ (1) مَلِكِ النَّاسِ (2) إِلَهِ النَّاسِ
-          (3) مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ (4) الَّذِي يُوَسْوِسُ فِي
-          صُدُورِ النَّاسِ (5) مِنَ الْجِنَّةِ وَالنَّاسِ (6)</font>
-        <h5>'صَدَقَ اللهُ العَظيمُ'</h5>
-        <audio class="mx-auto" src="./main/img/114.mp3" controls></audio>
-
-      </div>
-    </center>
-
-    <section style="display:flex ;
-    justify-content: center;align-items: center;" class="mx-auto">
-      <div class="bg">
-      </div>
-      <h1 id="sda">🤍</h1>
-    </section>
-    <center>
-      <h1 class="text-primary">هذا من فضل ربي</h3>
-      <br />
-      <div id="rob">
-        <h6>designed by developer: <a style="color: white;" href="https://www.facebook.com/profile.php?id=100021399729981"> fouad abdelhalim</a>
-         </h6>
-      </div>
-    </center>
-  </body>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <video  src="./main/img/vedio.mp4" width="100%" autoplay!important>Your browser does not support the video tag.</video>
+      </section>
+      <!-- end anv -->
+      
+      <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
